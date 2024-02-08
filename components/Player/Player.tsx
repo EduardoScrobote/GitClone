@@ -5,27 +5,13 @@ import { FaRegHeart } from "react-icons/fa";
 import { NextUIProvider } from "@nextui-org/react";
 import Buttons from "./components/PlayerButtons/Buttons";
 import Right from "./components/RightSide/Right";
+import LeftSide from "./components/LeftSide/LeftSide";
 
 function Player() {
   return (
-    <div className="w-[100%] flex flex-row items-center  gap-[24rem]">
-      <div className="flex items-center w-[16rem]">
-        <Image
-          src="/mix-png.png"
-          alt=""
-          width={64}
-          height={64}
-          className="rounded-md"
-        />
-        <div className="flex flex-col w-48 ml-4  justify-center">
-          <h1 className="text-md hover:underline hover:decoration-solid decoration-white hover:cursor-pointer">
-            Hear me now
-          </h1>
-          <p className="text-sm text-[#242230]">Alok feat zeeba</p>
-        </div>
-        <div className="flex w-10 h-10 p-2 items-center justify-center hover:bg-[#1e1c2a] rounded-full hover:cursor-pointer">
-          <FaRegHeart size={24} />
-        </div>
+    <div className="w-[100%] flex flex-row items-center gap-[20%]">
+      <div className="flex items-center justify-center w-[16rem]">
+        <LeftSide />
       </div>
       <div className="flex flex-col w-[44rem] items-center">
         <div className="flex w-full items-center justify-center mb-2">
